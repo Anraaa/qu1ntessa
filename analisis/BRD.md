@@ -80,6 +80,7 @@
 #### Mengapa Migration Permissions Tidak Dibuat? 
 
 Karena saat membuat proyek baru dengan perintah `composer create-project --prefer-dist raugadh/fila-starter .`, migrasi untuk tabel permissions sudah disediakan oleh spatie/laravel-permission. Paket ini secara otomatis mengatur tabel dan kolom yang diperlukan untuk permissions dan roles, sehingga tidak perlu membuat migrasi permissions secara manual.
+
 ---
 
 ## **6. Analisis Permissions untuk Mahasiswa dan Admin**
