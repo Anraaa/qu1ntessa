@@ -70,6 +70,7 @@ Panduan ini akan memandu Kalian dalam mengonfigurasi **SampleApp** menggunakan D
    ```
 
 2. **Sesuaikan Migration**
+   
    Buka file migration yang dihasilkan di dalam folder database/migrations dan sesuaikan skema sesuai kebutuhan proyek.
 
 3. **Sesuaikan Seeder**
