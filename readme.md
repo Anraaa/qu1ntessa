@@ -35,6 +35,7 @@ Panduan ini akan memandu Kalian dalam mengonfigurasi **SampleApp** menggunakan D
 
 ## 🔧 Konfigurasi Lingkungan
 1. **Edit File `.env`**
+   
    Sesuaikan konfigurasi di file `.env` sesuai kebutuhan proyek kalian.
 
 2. **Generate Kunci Aplikasi**
