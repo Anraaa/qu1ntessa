@@ -69,7 +69,7 @@
 - **Resource**: Endpoint API untuk data jadwal, dapat diakses oleh mahasiswa dan admin.
   
 ### **Permissions**
-- **Model**: `Permission`. Mengelola daftar permissions yang mengatur hak akses mahasiswa dan admin.
+- **Model**: `Permission`. Mengelola daftar permissions yang mengatur hak akses mahasiswa.
   
 - **Seeder**: `PermissionsSeeder`, bertugas menambahkan permissions dan menetapkannya ke role `mahasiswa`
 
