@@ -51,7 +51,7 @@
 ## **5. Model, Migrasi, Seeder, dan Resource yang Dibutuhkan**
 
 ### **Schedules**
-- **Model**: `Schedues`. Menyimpan rincian lengkap jadwal (hari, tanggal, jam mulai, jam berakhir, durasi, mata kuliah, pertemuan ke-n, dosen, ruangan).
+- **Model**: `Schedules`. Menyimpan rincian lengkap jadwal (hari, tanggal, jam mulai, jam berakhir, durasi, mata kuliah, pertemuan ke-n, dosen, ruangan).
 **Migration**: Struktur tabel berikut ini akan dibuat pada database:
   - `id`: `bigint UNSIGNED` (Primary Key)
   - `day`: `varchar(255)` - Menyimpan hari perkuliahan
