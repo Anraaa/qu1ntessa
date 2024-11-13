@@ -1,0 +1,42 @@
+@startuml jadwal
+title Flowchart untuk Aplikasi Cek Jadwal Kuliah
+
+start
+
+:Buka Aplikasi;
+
+:Masukkan Email dan Password;
+
+:Cek Kredensial;
+
+if (Kredensial Valid?) then (Ya)
+    if (Admin?) then (Ya)
+        :Login Sebagai Admin;
+        :Akses Manajemen Jadwal;
+        :Pilih Aksi;
+        if (Aksi = Tambah Jadwal) then (Tambah Jadwal)
+            :Masukkan Detail Jadwal;
+            :Simpan Jadwal;
+        elseif (Aksi = Edit Jadwal) then (Edit Jadwal)
+            :Pilih Jadwal yang Akan Diedit;
+            :Perbarui Detail Jadwal;
+            :Simpan Perubahan;
+        elseif (Aksi = Hapus Jadwal) then (Hapus Jadwal)
+            :Pilih Jadwal yang Akan Dihapus;
+            :Konfirmasi Penghapusan;
+        endif
+        :Logout;
+    else (Mahasiswa)
+        :Login Sebagai Mahasiswa;
+        :Akses Tampilan Jadwal;
+        :Tampilkan Detail Jadwal (Tanggal, Waktu, Durasi, Mata Kuliah, Pertemuan ke-n, Dosen, Ruang Kelas);
+        :Logout;
+    endif
+else (Tidak)
+    :Tampilkan "Kredensial Tidak Valid";
+    :Kembali ke Halaman Login;
+endif
+
+stop
+
+@enduml

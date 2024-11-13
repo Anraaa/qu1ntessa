@@ -1,0 +1,35 @@
+@startuml jadwal
+actor Admin
+actor Mahasiswa
+
+usecase "Input Email dan Password" as UC10
+usecase "Cek Kredensial" as UC11
+usecase "Login Gagal" as UC12
+usecase "Login Admin" as UC1
+usecase "Login Mahasiswa" as UC2
+usecase "Akses Manajemen Jadwal" as UC3
+usecase "Tambah Jadwal" as UC4
+usecase "Edit Jadwal" as UC5
+usecase "Hapus Jadwal" as UC6
+usecase "Akses Tampilan Jadwal" as UC7
+usecase "Tampilkan Detail Jadwal" as UC8
+usecase "Logout" as UC9
+
+Admin --> UC10
+Mahasiswa --> UC10
+UC10 --> UC11
+UC11 --> UC12: tidak valid
+UC12 --> UC10 
+
+UC11 --> UC1: valid
+UC1 --> UC3
+UC3 --> UC4: include
+UC3 --> UC5: include
+UC3 --> UC6: include
+UC3 --> UC9 : extend
+
+UC11 --> UC2: valid
+UC2 --> UC7
+UC7 --> UC8: include
+UC7 --> UC9 : extend
+@enduml
