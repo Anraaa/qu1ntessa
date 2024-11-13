@@ -14,7 +14,9 @@ Panduan ini akan memandu Kalian dalam mengonfigurasi **SampleApp** menggunakan D
    ```
 
 2. **Jalankan Docker**
-   Buka Docker terlebih dahulu lalu ketik
+   
+   Buka Docker terlebih dahulu untuk memulai, lalu jalankan perintah berikut:
+
    ```bash
    docker compose up -d
    ```
@@ -64,7 +66,9 @@ Panduan ini akan memandu Kalian dalam mengonfigurasi **SampleApp** menggunakan D
 ## 🧩 Pembuatan dan Konfigurasi Model
 
 1. **Buat Model `Schedules`**  
+   
    Gunakan flag `-ms` untuk secara otomatis membuat migration dan seeder:
+
    ```bash
    php artisan make:model Schedules -ms
    ```
@@ -74,9 +78,11 @@ Panduan ini akan memandu Kalian dalam mengonfigurasi **SampleApp** menggunakan D
    Buka file migration yang dihasilkan di dalam folder database/migrations dan sesuaikan skema sesuai kebutuhan proyek.
 
 3. **Sesuaikan Seeder**
+   
    Sesuaikan seeder pada file database/seeders untuk menambahkan data awal pada tabel Schedules jika diperlukan.
 
 4. **Sesuaikan Model**
+   
    Edit model Schedules di dalam folder app/Models sesuai dengan kebutuhan analisis Anda.
 
 ---
