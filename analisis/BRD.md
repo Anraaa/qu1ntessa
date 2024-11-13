@@ -109,7 +109,7 @@ Seeder PermissionsSeeder akan digunakan untuk membuat dan menetapkan permissions
 
 ---
 
-## **Riwayat Dokumen**
+## **Changelog**
 
 | Versi | Tanggal       | Penulis         | Deskripsi                          |
 |-------|---------------|-----------------|------------------------------------|
