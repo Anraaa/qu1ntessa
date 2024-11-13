@@ -52,7 +52,7 @@
 
 ### **Schedules**
 - **Model**: `Schedules`. Menyimpan rincian lengkap jadwal (hari, tanggal, jam mulai, jam berakhir, durasi, mata kuliah, pertemuan ke-n, dosen, ruangan).
-**Migration**: Struktur tabel berikut ini akan dibuat pada database:
+- **Migration**: Struktur tabel berikut ini akan dibuat pada database:
   - `id`: `bigint UNSIGNED` (Primary Key)
   - `day`: `varchar(255)` - Menyimpan hari perkuliahan
   - `date`: `date` - Tanggal perkuliahan
