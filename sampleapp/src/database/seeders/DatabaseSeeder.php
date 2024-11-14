@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
         
         // Additional seeders
         $this->call([SchedulesSeeder::class]);
+        $this->call([PermissionsSeeder::class]);
     }
 
     private function seedUsers(): void
