@@ -2,7 +2,7 @@ version : '3'
 services:
   sample:
     build: ./php
-    image: sample_php:latest
+    image: ghcr.io/Anraaa/sample_php:latest
     container_name: sample
     hostname: "sample"
     volumes:
